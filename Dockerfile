@@ -8,6 +8,6 @@ RUN cd /tmp && curl -L -O https://sourceforge.net/projects/davmail/files/davmail
 WORKDIR cd /usr/local
 RUN tar xfz /tmp/download && ln -s davmail* davmail
 
-# XXX change user context, and add config
-#ADD davmail.properties
-#ENTRYPOINT /usr/local/davmail/davmail.sh /usr/local/davmail/davmail.properties
+# XXX change user context, and add config note to readme
+ADD davmail.properties /usr/local/davmail/
+ENTRYPOINT /usr/local/davmail/davmail.sh /usr/local/davmail/davmail.properties
