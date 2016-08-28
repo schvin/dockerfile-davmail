@@ -1,6 +1,6 @@
 FROM openjdk:jdk-alpine
 MAINTAINER George Lewis <schvin@schvin.net>
-ENV REFRESEHD_AT 2016-08-28
+ENV REFRESEHD_AT 2016-08-28b
 
 RUN apk -U upgrade
 RUN apk -U add curl
