@@ -1,7 +1,6 @@
 FROM openjdk:jdk-alpine
 MAINTAINER George Lewis <schvin@schvin.net>
-ENV REFRESEHD_AT 2018-05-31
->>>>>>> 1bfa4efc34f4b3246cd5fa5fac85d02c24a2c1f2
+ENV REFRESHED_AT 2018-05-31
 
 EXPOSE 1110
 
