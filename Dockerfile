@@ -1,12 +1,12 @@
 FROM openjdk:jdk-alpine
 MAINTAINER George Lewis <schvin@schvin.net>
-ENV REFRESEHD_AT 2016-08-28b
+ENV REFRESEHD_AT 2018-05-31
 
 EXPOSE 1110
 
 RUN apk -U upgrade
 RUN apk -U add curl
-RUN cd /tmp && curl -L -O https://sourceforge.net/projects/davmail/files/davmail/4.7.2/davmail-linux-x86_64-4.7.2-2427.tgz/download
+RUN cd /tmp && curl -L -O https://sourceforge.net/projects/davmail/files/davmail/4.8.4/davmail-linux-x86_64-4.8.4-2570.tgz/download
 WORKDIR /usr/local
 RUN tar xfz /tmp/download && mv davmail* davmail
 
