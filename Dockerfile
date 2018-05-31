@@ -1,6 +1,7 @@
 FROM openjdk:jdk-alpine
 MAINTAINER George Lewis <schvin@schvin.net>
 ENV REFRESEHD_AT 2018-05-31
+>>>>>>> 1bfa4efc34f4b3246cd5fa5fac85d02c24a2c1f2
 
 EXPOSE 1110
 
@@ -10,6 +11,5 @@ RUN cd /tmp && curl -L -O https://sourceforge.net/projects/davmail/files/davmail
 WORKDIR /usr/local
 RUN tar xfz /tmp/download && mv davmail* davmail
 
-# XXX change user context, and add config note to readme
 ADD davmail.properties /usr/local/davmail/
 ENTRYPOINT /bin/sh /usr/local/davmail/davmail.sh /usr/local/davmail/davmail.properties

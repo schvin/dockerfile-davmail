@@ -1,7 +1,4 @@
 # dockerfile-davmail
 
-note start up script, expose port
-change server name!
-
-
-certs!
+docker build -t davmail .
+docker run -it -p 1110:1110 davmail
