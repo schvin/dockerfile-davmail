@@ -7,8 +7,9 @@ EXPOSE 1110
 RUN apk -U upgrade
 RUN apk -U add curl
 RUN cd /tmp && curl -L -O https://sourceforge.net/projects/davmail/files/davmail/5.2.0/davmail-5.2.0-2961.zip/download
-WORKDIR /usr/local
-RUN unzip /tmp/download && mkdir davmail && mv davmail* lib davmail
+RUN mkdir /usr/local/davmail
+WORKDIR /usr/local/davmail
+RUN unzip /tmp/download
 
 ADD davmail.properties /usr/local/davmail/
 ENTRYPOINT /bin/sh /usr/local/davmail/davmail.sh /usr/local/davmail/davmail.properties
