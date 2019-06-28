@@ -12,4 +12,4 @@ WORKDIR /usr/local/davmail
 RUN unzip /tmp/download
 
 ADD davmail.properties /usr/local/davmail/
-ENTRYPOINT /bin/sh /usr/local/davmail/davmail /usr/local/davmail/davmail.properties
+ENTRYPOINT /usr/local/davmail/davmail /usr/local/davmail/davmail.properties
