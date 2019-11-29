@@ -1,6 +1,6 @@
 FROM openjdk:jdk-alpine
 MAINTAINER George Lewis <schvin@schvin.net>
-ENV REFRESHED_AT 2019-06-28
+ENV REFRESHED_AT 2019-11-29
 
 EXPOSE 1110
 
